@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page introuvable — Cuisine en Ville</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="images/logo-cuisine-en-ville.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .nf { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2em; }
+  .nf-plate {
+    width: 190px; height: 190px; border-radius: 50%;
+    border: 1px solid var(--gold); position: relative; margin-bottom: 2.2em;
+    box-shadow: inset 0 0 0 14px var(--bg), inset 0 0 0 15px var(--line), 0 24px 60px rgba(16,27,63,.18);
+    background: var(--card);
+  }
+  .nf-plate::after {
+    content: "404"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-serif); font-style: italic; font-size: 3rem; color: var(--gold);
+  }
+  .nf h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin-bottom: .4em; }
+  .nf .script-title { margin-bottom: .2em; }
+</style>
+</head>
+<body>
+<main class="nf">
+  <div class="nf-plate" aria-hidden="true"></div>
+  <p class="script-title">Oups…</p>
+  <h1>« Cette page n'est pas au menu »</h1>
+  <p style="opacity:.75;max-width:32em;">Le plat que vous cherchez a peut-être changé avec la saison. Laissez-nous vous raccompagner à votre table.</p>
+  <div class="hero-actions" style="margin-top:2em;">
+    <a href="index.html" class="btn btn-gold">Retour à l'accueil</a>
+    <a href="index.html#carte" class="btn btn-ghost">Découvrir la carte</a>
+  </div>
+</main>
+</body>
+</html>
